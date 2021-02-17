@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,#000046, #1CB5E0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,#000046, #1CB5E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+
+.brand-logo {
+    display: flex;
+    size: 1rem;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-grow: 1;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-main-section {
+    display: flex;
+    align-items: row;
+    justify-content: space-evenly;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vh;
+    max-height: 500px;
+    align-self: center;
+}
+
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.img-wrapper img {
+    border: 10px solid white;
+    flex: 1 1 350px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+    .home-main-section {
+        flex-direction: column-reverse;
+    }
+}
+
