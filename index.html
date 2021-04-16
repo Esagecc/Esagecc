@@ -2,35 +2,221 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E Sage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <title>E Sage Dev</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="container full-height-grow">
-    <header class="main-header">
-         <a href="/" class="brand-logo"><img src="mylogowhsm.png" width="120rem"></a>
-            <nav class="main-nav">
-                <i class="fas fa-bars"></i>
-                <ul>
-                <li><a href="index.html" class="link-hover">Home</a></li>
-                <li><a href="Resume.html" class="link-hover">Resume</a></li>
-                <li><a href="Project.html" class="link-hover">Projects</a></li>
-                <li><a href="Contact.html" class="link-hover">Contact</a></li>
-                </ul>
-        </nav><link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-    </header>
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="navbar__link navbar__link-brand container">
+                <img src="img/mylogowhsm.png" height="100px">
+            </div>
+            <div class="menu-btn navbar__link navbar__link-toggle">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <nav class="navbar__items container">
+                
+                <div class="navbar__link"><a href="#intro"> Aspiration</a>
+                </div>
+                <div class="navbar__link"><a href="#resume">Resume</a>
+                </div>
+                <div class="navbar__link"><a href="#portfolio">Portfolio</a>
+                </div>
+            </nav>
+        <nav class="navbar__items navbar__items--right container" >
+            <div class="navbar__link"><a href="#contact">Contact</a>
+                
+            </div>
+        </nav>
+    </div>   
 
-    <section class="home-main-section">
-        <div class="intro">
-            <h1 class="title">Hi, I am Elizabeth Chavez</h1>
-            <span class="subtitle">I am front-end web developer that learned with online bootcamp and courses. I have a vast case management's experience that helped developed strong ethics and multi-tasking skills. I am great team player and I committed to finishing deadlines. </span>
-        </div>
-        <div class="img-wrapper">
-            <img src="pic 2.jpg" height="350px">
-        </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    </section>
     
+    <!-- Intro -->
+    <div class="intro " id="intro">
+        <div class="container">
+            <h1>Aspiration</h1>
+            <p>Hi, I am Elizabeth Chavez and I am self-taught developer specializing in the Front-End Development. In the past year, I dedicated myself to master the basic of HTML, CSS and JavaScript. I used VSC to develop my project and present my projects on CodePen and GitHub. With my case management background, I see how nonprofit organizations are utilizing different website platforms for reporting and documentation. User experience is obtained through work experience to understand the need. I owned it to my colleagues for better work experience.  </p>
+            <img class="profpic" src="img/crop pic 1.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Resume -->
+
+    <div class="resume container" id="resume">
+            <h1>Resume</h1>
+            <h3 class="sect">Contact</h3>
+            <p>
+            Austin, TX  <br>
+            e.sage.cc@outlook.com
+            </p>
+       
+            <h3 class="sect">Skills</h3>
+            <ul class="list">
+            <li>Type 50 wpm</li>
+            <li>Fluent in Spanish</li>
+            <li>CPR/First Aid trained</li>
+            <li>Team player</li>
+            <li>Meet deadlines</li>
+            <li></li>
+            </ul>
+         
+            <h3 class="sect">Education</h3>
+            <p>
+            <em>Communication Disorder/Pre-Requisite</em><br>
+            Western Kentucky University<br>
+            Bowling Green, KY<br>
+            June 2012 – August 2013
+            </p>    
+        
+            <p> 
+            <em>Psychology/BS</em><br>
+            University of Houston-Downtown<br>
+            Houston, TX<br> 
+            August 2000 – December 2004
+            </p>
+             
+            <h3 class="sect">Languages</h3> 
+            <div class="logos">
+                 <img class="languages" src="img/HTML5_Logo.svg" alt="">
+                 <img src="img/css3.png" alt="" class="languages">
+                 <img src="img/JavaScript-logo.png" alt="" class="languages">
+                 <img src="img/Bootstrap.png" alt="" class="languages">
+                 <img src="img/jQuery.png" alt="" class="languages">
+                 <img src="img/node.png" alt="" class="languages">
+                <img src="img/reactjs.png" alt="" class="languages">
+                <img src="img/npm-logo.png" alt="" class="languages">
+
+            </div>
+           <h3 class="sect">Apps</h3>
+           <div class="apps">
+               <img src="img/VSC.png" alt="" class="languages">
+               <img src="img/Photoshop.png" alt="" class="languages">
+               <img src="img/office.png" alt="" class="languages">
+               <img src="img/github.png" alt="" class="languages">
+               <img src="img/Wordpress.png" alt="" class="languages">
+           </div>
+          
+            <section id="second">
+            <h3 class="sect">Certificates</h3>
+           <p><b>Modern JavaScript Bootcamp</b><br><i>Udemy</i></p>
+           
+            <p>
+                <a href="https://www.udemy.com/certificate/UC-fc7284bd-33ee-4cd0-903d-94dfa116f2ec/" target="_blank"> <b>The Web Developer Bootcamp</b></a><br>
+                <i>Udemy</i>
+            </p>
+            
+            <p>
+                <a href="https://www.udemy.com/certificate/UC-755fce96-209d-4330-9366-64eca25e544d/" target="_blank"><b>Design Rules: Principles + Practices for Great UI Design</b></a><br>
+                <i>Udemy</i>
+            <p>
+            
+            <p>
+                <a href="https://www.udemy.com/certificate/UC-URPIAYHN/" target="_blank"><b>WordPress for Beginners: Create a Website Step by Step</b></a><br>
+                <i>Udemy</i>
+            </p>
+           
+          <p>
+              <a href="http://www.corpusfusion.com/wp-content/uploads/2020/07/Javascript-certificate.pdf" target="_blank"><b>Javascript Fundamentals Course</b></a><br>
+                <i>SoloLearn</i>
+            </p>
+          
+            <p>
+                <a href="http://www.corpusfusion.com/wp-content/uploads/2020/06/CSS-Fundamentals-certificate.pdf" target="_blank"><b>CSS Fundamentals Course</b></a><br>
+                <i>SoloLearn</i>
+            </p>
+            
+            <p>
+                <a href="http://www.corpusfusion.com/wp-content/uploads/2020/06/HTML-certificate.pdf" target="_blank"><b>HTML Fundamentals Course</b></a><br>
+                <i>SoloLearn</i>
+            </p>
+        
+            <h3 class="sect">Employment</h3>
+        
+            <p><b>WordPress Developer</b><br>
+            CorpusFusion<br>
+            June 2019 - Present</p>
+
+            <p><b>Case Manager III</b><br>
+            BCFS Health & Human Services<br>
+            Nov 2017-Dec 2020<br>
+            </p>
+        
+            <p><b>Early Intervention Specialist</b><br>
+            Brighton Center<br>
+            July 2014-May 2017
+            </p>
+        
+            <p><b>Early Intervention Specialist</b><br>
+            Texana Center<br>
+            Jan 2011-April 2014<br>
+            </p>
+        
+            <p><b>Early Intervention Specialist</b><br>
+            ECI – MHMRA of Harris County<br>
+            Aug 2005 – Dec 2010<br>
+            </p> 
+        </section>
+        </section> 
+         
+
+    </div>   
+<!-- Portfolio -->
+
+    <div class="portfolio" id="portfolio"> 
+        <div class="container">
+            <h1>Portfolio</h1>
+            <div class="site">
+             <a href="https://esagecc.github.io/youtube_clone/" class="project">YouTube Clone</a><p>Mastering a popular site.</p>
+             <a href="https://esagecc.github.io/youtube_clone/"><img src="img/Youtube clone.jpg" alt=""></a> 
+            </div>
+             
+            <div class="site">
+                <a href="https://esagecc.github.io/maze/"class="project">Maze Game</a><p>A JavaScript Game site.</p> 
+                <a href="https://esagecc.github.io/maze/"><img src="img/Maze Game.jpg" alt=""></a>
+            </div>
+             
+            <div class="site">
+                <a href="https://esagecc.github.io/secret_message/" class="project">Secret Message App</a><p>Used React to develop the site.</p> 
+                <a href="https://esagecc.github.io/secret_message/"><img src="img/Secret Message.jpg" alt=""></a>
+            </div>
+          
+            <div class="site">
+                <a href="https://esagecc.github.io/homicidal_crime_presskit/" class="project">Movie Press Kit</a><p>Mobile friendly site to promote a short film.</p> 
+                <a href="https://esagecc.github.io/homicidal_crime_presskit/"><img src="img/Homicidal.jpg" alt=""></a>  
+            </div>
+
+            <div class="site">
+                <a href="https://github.com/Esagecc" class="project">GitHub platform</a><p>It is a great site to add all my projects and pages.</p> 
+                <a href="https://github.com/Esagecc"><img src="img/Githubsite.jpg" alt=""></a>  
+            </div>
+
+            <div class="site">
+                <a href="https://codepen.io/esagecc" class="project">Codepen Site</a><p>Easily viewed front end project.</p> 
+                <a href="https://codepen.io/esagecc"><img src="img/codepen.jpg" alt=""></a>  
+            </div>
+
+        </div>
+
+    </div>
+   
+<!-- Contact     -->
+
+<div class="contact" id="contact">
+    <div class="container">
+        <h1 class="contact__title">Contact</h1>
+        <p>Email: e.sage.cc@outlook.com</p>
+        <a href="https://www.facebook.com/e.sage.cc98"><img src="img/facebook.png" class="logo_contact" alt=""></a>
+        <a href="https://www.linkedin.com/in/elizabeth-chavez-080808/"><img src="img/linkend.png"  class="logo_contact"alt=""></a>
+        <a href="https://twitter.com/esagecc"><img src="img/twitter.png" class="logo_contact" alt=""></a>
+        <p>Trademark E Sage Web Developer 2021</p>
+    </div>
+</div>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
