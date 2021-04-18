@@ -359,6 +359,11 @@ body {
                padding-top: 25px;
                padding-bottom: 40px;
            }
+          
+          .column__one, 
+           .column__two {
+               width: 50%;
+           }
           }
 
       
