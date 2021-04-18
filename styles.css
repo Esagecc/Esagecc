@@ -31,8 +31,7 @@ body {
 }
 
 .navbar__link a:focus, 
-.navbar__link a:hover
- {
+.navbar__link a:hover {
     color:rgb(15, 214, 240);
     cursor: pointer;
 }
@@ -121,7 +120,8 @@ body {
     width: 100%;
 }
 
-.intro h1, .resume h1 {
+.intro h1, 
+.resume h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -137,7 +137,6 @@ body {
 
 .intro {
     background-image: url(img/pexels-paul-blenkhorn-sensoryarthouse-3280522.jpg);
-    /* height: 100%vh; */
     background-repeat: no-repeat;
     margin-top: -21px;
     color: white;
@@ -189,7 +188,8 @@ body {
    
 }
 
-.logos, .apps {
+.logos, 
+.apps {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -278,5 +278,87 @@ body {
       #myBtn:hover {
         background-color: #555;
       }
+
+      @media (min-width: 600px) {
+
+        .container {
+            width: 70%;
+        }
+          .navbar__link-toggle {
+              display: none;
+          }
+
+          .logo {
+              padding-left: 225px;
+        
+          }
+
+          .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 150px;
+          }
+          .navbar__items {
+              display: flex;
+              flex-direction: row;
+              font-size: 1.5rem;
+          }
+
+       .navbar__link {
+            padding-right: 25px;
+       }
+
+            .intro {
+                margin-top: 0;
+                background-repeat: repeat;
+                min-height: 600px;
+                display: flex;
+                align-items: center;
+            }
+
+          .intro__content {
+              display: flex;
+              flex-direction: row;
+          }
+          
+          .intro__text {
+              display: flex;
+              flex-direction: column;
+              width: 60%;
+          } 
+
+          .intro__text h1 {
+              margin: 0;
+              padding: 0;
+          }
+
+          .intro__text p {
+              margin-top: 10px;
+              margin-bottom: 0;
+              padding-right: 25px;
+              font-size: 1.5rem;
+          }
+
+              .profpic {
+                  max-width: 400px;
+                  /* width: 50%; */
+              }
+
+              .resume__columns {
+                  display: flex;
+                  flex-direction: row;
+              }
+              .site img {
+                  max-width: 600px;
+              }
+             
+           .resume,
+           .portfolio,
+           .contact {
+               padding-top: 25px;
+               padding-bottom: 40px;
+           }
+          }
 
       
