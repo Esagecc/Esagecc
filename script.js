@@ -1,23 +1,22 @@
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
-    } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-    }
-});
-
-function classToggle() {
-    const navs = document.querySelectorAll('.navbar__items')
+    const toggle = document.getElementById('toggle')
+    const navbarShow = document.getElementById('navbar-list')
     
-    navs.forEach(nav => nav.classList.toggle('navbar__toggleshow'));
-  }
+        document.onclick = function(e){
+            if(e.target.id !== 'navbarShow' && e.target.id !== 'toggle')
+            {
+                toggle.classList.remove('active')
+                navbarShow.classList.remove('active')
+            }
+        }
+    
+        toggle.onclick = function(){
+            toggle.classList.toggle('active')
+            navbarShow.classList.toggle('active')
+        }
+    
+        
   
-  document.querySelector('.navbar__link-toggle')
-    .addEventListener('click', classToggle);
+
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
