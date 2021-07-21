@@ -8,10 +8,17 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.brown-background {
+    background-color: rgb(70, 40, 1);
+}
 .container {
     margin: 0 auto;
     width: 90%;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
 }
 
 .navbar {
@@ -23,18 +30,29 @@ body {
     font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 25px 0;
+    padding: 10px 0;
 }
 
+.top-navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.navbar__items {
-    display: none;
+.navbar-list {
+    display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    display: none;
+  }
 
+  .navbar-list.active {
+    display: flex;
+  }
 .navbar__link a:focus, 
 .navbar__link a:hover {
-    color:rgb(15, 214, 240);
+    color:rgb(179, 247, 172);
     cursor: pointer;
 }
 
@@ -48,75 +66,60 @@ body {
     color: white;
 }
 
-.navbar__items--right {
-    padding-bottom: 15px;
-}
-
 /* Toggle Button */
 
-.menu-btn {
+.toggle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    border: 3px solid #fff;
+    border: 4px solid #fff;
 }
 
-.menu-btn__burger {
-    width: 50px;
-    height: 6px;
+.toggle__burger {
+    width: 26px;
+    height: 4px;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    border-radius: 4px;
     transition: all .5s ease-in-out;
 }
 
-.menu-btn__burger::before,
-.menu-btn__burger::after {
+.toggle__burger::before,
+.toggle__burger::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 26px;
+    height: 4px;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    border-radius: 4px;
     transition: all .5s ease-in-out;
 }
 
-.menu-btn__burger::before {
-    transform: translateY(-16px);
+.toggle__burger::before {
+    transform: translateY(-10px);
 }
 
-.menu-btn__burger::after {
-    transform: translateY(16px);
+.toggle__burger::after {
+    transform: translateY(10px);
 }
 
 /* ANIMATION */
-.menu-btn.open .menu-btn__burger {
+.toggle.active .toggle__burger {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
 }
-.menu-btn.open .menu-btn__burger::before {
+.toggle.active .toggle__burger::before {
     transform: rotate(45deg) translate(35px, -35px);
 }
-.menu-btn.open .menu-btn__burger::after {
+.toggle.active .toggle__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-.navbar__link-toggle {
-    align-self: flex-end;
-    position: absolute;
-    margin: 20px;
-}
-
-.navbar__toggleshow {
-    display: flex;
-}
 
 .profpic {
     width: 100%;
@@ -138,8 +141,7 @@ body {
 }
 
 .intro {
-    background-image: url(img/pexels-paul-blenkhorn-sensoryarthouse-3280522.jpg);
-    background-color: rgba(5, 4, 4, 0.5);
+    background-color: rgba(8, 45, 4, 255);
     background-repeat: no-repeat;
     background-blend-mode:overlay;
     margin-top: -21px;
@@ -201,7 +203,9 @@ body {
 }
 
 .portfolio {
-    background-image: linear-gradient( 92.6deg,  rgba(127,247,193,1) -12%, rgba(49,245,255,1) 43%, rgba(110,123,213,1) 86.5% );
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: none;
     }
 
@@ -272,7 +276,7 @@ body {
         font-size: 18px;
         border: none;
         outline: none;
-        background-color: rgb(27, 185, 233);
+        background-color: rgb(96, 106, 57);
         color: white;
         cursor: pointer;
         padding: 15px;
@@ -286,39 +290,42 @@ body {
       @media (min-width: 600px) {
 
         .container {
-            width: 70%;
+            width: 80%;
         }
-          .navbar__link-toggle {
-              display: none;
-          }
 
-          .logo {
-              padding-left: 225px;
-        
-          }
+        .toggle {
+            display: none;
+        }
 
-          .navbar {
+        .navbar {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-content: space-between;
             height: 150px;
+            margin: 0 auto;
+                  
           }
-          .navbar__items {
+
+          .top-navbar {
+              overflow:visible;
+
+          }
+
+          .navbar-list {
               display: flex;
               flex-direction: row;
               font-size: 1.5rem;
+              text-align: center;
+              justify-content: flex-end;
           }
 
-       .navbar__link {
-            padding-right: 25px;
-       }
 
-            .intro {
-                margin-top: 0;
-                background-repeat: repeat;
-                min-height: 600px;
-                display: flex;
-                align-items: center;
+        .intro {
+            margin-top: 0;
+            background-repeat: repeat;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
             }
 
           .intro__content {
