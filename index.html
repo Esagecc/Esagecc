@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Sage Dev</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
-    <div class="navbar">
-        <div class="navbar__link navbar__link-brand container">
-             <img class="logo" src="img/mylogowhsm.png" height="100px">
+    <div class="brown-background">
+        <div class="navbar container">
+        <div class="top-navbar">
+             <img class="logo" src="img/e sage logo white.png" height="80px">
+            <div class="toggle" id="toggle">
+            <div class="toggle__burger"></div>
+            </div>
         </div>
-        <div class="menu-btn navbar__link navbar__link-toggle">
-            <div class="menu-btn__burger"></div>
-        </div>
-        <nav class="navbar__items container">
+       
+        <nav class="container navbar-list" id="navbar-list"">
             <div class="navbar__link"><a href="#intro"> Aspiration</a>
             </div>
             <div class="navbar__link"><a href="#resume">Resume</a>
@@ -26,7 +28,9 @@
             <div class="navbar__link"><a href="#contact">Contact</a>
              </div>
         </nav> 
-    </div>   
+    </div>
+    </div>
+       
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
