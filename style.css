@@ -320,6 +320,9 @@ body {
               justify-content: flex-end;
           }
 
+          .navbar__link {
+              padding-left: 25px;
+          }
 
         .intro {
             margin-top: 0;
