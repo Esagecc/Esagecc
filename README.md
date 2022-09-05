@@ -1,6 +1,7 @@
-Welcome to the README.md file.
+Welcome to my Github site. I developed many repositories of challenges and websites. The short film digital press kits are located in my account. 
 
-Here is the coding for the main site for my resume of my career. 
+I started to complete the Front End Mentor challenges in the summer of 2022 to enhance my front end skills. It provided plenty of JavaScript skills.
 
-I added as a github site to start working on it. However I did just bought the site to add it. www.esageccwebdev.com. 
+Feel free to follow and ask any questions of repositories.
 
+Also I would love to contribute any non-profit organizations. 
